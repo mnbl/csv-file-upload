@@ -14,13 +14,19 @@
 ### Downloading Project
 
 ```sh
-$ git clone https://github.com/mnbl/csv-file-uplaod
+$ git clone https://github.com/mnbl/csv-file-upload
 ```
 
 ### Downloading Project
 
 ```sh
 $ npm install
+```
+
+### Starting MongoDB Server (Linux Only)
+
+```sh
+$ sudo service mongod start
 ```
 
 ### Run Code
