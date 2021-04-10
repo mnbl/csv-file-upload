@@ -1,15 +1,20 @@
 extends layout
 
 block content
-	if message.length > 0
-		p=message
 	form(action="/uploads" method="post" enctype="multipart/form-data")
-		input(type="text" name='email' placeholder='Enter email here')
-		br
-		br
-		br 
-		input(type="file" name="csv_file" accept=".csv")
-		br
-		br
-		br
-		button(type="submit") Submit
+		h1
+			strong CSV File Upload
+		.form-group
+			label(for='Email')
+				| Email 
+			input#title.form-controll(type='email' name='email' placeholder='Enter email here', required)
+		.form-group.file-area
+			label(for='images')
+				| CSV File
+			input#images(type='file' name="csv_file" accept=".csv" required)
+			.file-dummy
+				.success #{message}
+				.default #{message}
+		.form-group
+			button(type='submit') Upload File
+	link(href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700' rel='stylesheet' type='text/css')
