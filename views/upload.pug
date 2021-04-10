@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	if message.length > 0
+		p=message
+	form(action="/uploads" method="post" enctype="multipart/form-data")
+		input(type="text" name='email' placeholder='Enter email here')
+		br
+		br
+		br 
+		input(type="file" name="csv_file" accept=".csv")
+		br
+		br
+		br
+		button(type="submit") Submit

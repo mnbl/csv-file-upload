@@ -1,0 +1,10 @@
+1. Make a webpage with a form to upload a CSV file and enter the email address. <Done>
+2. Upload the CSV file provided with this task. And show the message "Images are being uploaded, you'll get an email when it's done" <done>
+3. The CSV contains 100 image URLs. You have to downloads the images from the specified URL and save them in the uploads directory and save the path in the database. Make sure all this is done in the background. <Done>
+4. Also create a thumbnail of the original image (256*256) and save it in a separate (thumb) folder and also save it in the database. <Done> 
+5. After all the images have finished processing, send a mail to the user that the task is successful. 
+
+NOTE
+-----------------
+1. Make sure you process the images in the background so the script can efficiently process even 1000s of images without fail. <Done>
+2. use any database that suits you. <Done>
