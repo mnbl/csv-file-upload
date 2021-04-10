@@ -33,4 +33,5 @@ $ sudo service mongod start
 
 ```sh
 $ npm start
+$ To check running project, go to browser: http://127.0.0.1:3000/
 ```
