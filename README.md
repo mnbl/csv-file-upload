@@ -6,6 +6,13 @@
 -   Saves all entries in MongoDB database
 -   Send Email to user when it's done
 
+### CSV File Format
+
+-   Headers: ID,Image URL
+-   ID: ID for URLS
+-   Image URL: API URL where images are stored
+
+
 ### Requirement
 
 -   Node.js
